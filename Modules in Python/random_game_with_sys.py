@@ -1,5 +1,7 @@
-import random
+"""Module imports."""
 import sys
+import random
+
 
 first = int(sys.argv[1])
 last = int(sys.argv[2])
@@ -19,10 +21,9 @@ while not correct_guess:
             print(f'You are correct, the guess was {rand_number}')
             correct_guess = True
         else:
-            print(f'Tough luck, please guess again.')
+            print('Tough luck, please guess again.')
             continue
 
     except ValueError:
         print('Please enter a numerical value.')
         continue
-
