@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="static/style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}"></head>
 <body>
-    I am a web master
-    <script src="static/script.js"></script>
+    My name is {{name}} and I am a web master! Welcome to article number {{post_id}}.
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
